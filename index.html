@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <title>Library</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>MY LIBRARY</h1>
+            <div class="library-container"></div>
+             <button class="add-book-btn">+ Add New Book</button>
+        </header>    
+        <dialog close>
+            <!-- <button id="button1" autofocus>Close</button> -->
+            <form action="/library" id="new-book-form" method="dialog">
+                <div>
+                    <label for="title">Title:</label>
+                    <input id="title" type="text" name="title" placeholder="title">
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input id="author" type="text" name="author" placeholder="author">
+                </div>
+                <div>
+                    <label for="pages">Pages:</label>
+                    <input id="pages" type="number" name="pages" placeholder="pages">
+                </div>
+                <div>
+                    <label for="read">Read</label>
+                     <input id="read" type="checkbox" name="read" placeholder="read">
+                </div>
+                <menu>
+                    <button id="cancel-dialog" type="button">Cancel</button>
+                    <button id="submit-book" type="submit">Add to Library</button>
+                </menu>
+            </form>
+        </dialog>
+    </div>
+
+    <script src="./library.js"></script>
+</body>
+</html>

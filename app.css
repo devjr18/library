@@ -1,0 +1,17 @@
+/* .new-book {
+    width: 100vh;
+    height: auto;
+} */
+
+.newBook {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 5px;
+}
+#book-details > li {
+    list-style-type: none;
+    box-shadow: 4px 4px 8px #888888;
+    margin: 50px;
+    font-size: 15px;
+    /* margin: 10px; */
+}
